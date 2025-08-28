@@ -88,43 +88,13 @@ MIT License.
 CoinGecko API data subject to their terms of service: https://www.coingecko.com/en/terms
 ---
 We welcome input and insights! Please fork, clone, and submit PRs.
-## :white_check_mark: Results & Evaluation (MVP Checkpoint)
-### Working Prototype
-- **Live alerts:** System polls CoinGecko and triggers emails on threshold breach. (For demo we temporarily set a tiny threshold, e.g., **−0.1%**, to force an alert and prove delivery.)
-- **Random Forest model:** Trains on cached CSV of historical BTC features; outputs a probability of a **≥20% monthly dip**.
-### Evaluation
-- Notebook includes **10–20 test rows** with: date, engineered features, predicted probability, actual next-day return, and label (dip/no dip).
-- Report **AUC** and **precision/recall** at the chosen probability cutoff.
-- Include **confusion matrix** and **classification report** (Mohammed’s code).
-### Current Status of Email
-- SMTP wiring is **in progress** (Kachi). Alerts trigger correctly; configuring credentials/routes for reliable inbox delivery is the remaining step.
----
-## :bulb: Value Proposition
-DipDetectorML is a **smarter accumulation assistant** for long-term holders:
-- :arrows_counterclockwise: **Better than static buy orders:** static limit prices go stale; **percent-based** alerts adapt at any price level.
-- :compass: **Control + discipline:** we notify; you decide sizing. Example rule-set:
-  - 5% dip → advance weekly DCA
-  - 10% dip → 2× DCA
-  - 20% dip → 3× DCA
-- :crystal_ball: **Predictive foresight:** the monthly crash forecast helps you **stage cash** ahead of major downturns rather than reacting late.
----
-## :warning: Limitations
-- :scales: **Class imbalance:** true ≥20% dips are rare; requires careful thresholding and metrics.
-- :hourglass_flowing_sand: **Non-stationarity:** crypto regimes change; models can drift.
-- :lock: **API rate limits:** CoinGecko free tier is 100k requests/month → poll responsibly.
-- :dart: **Scope:** MVP focuses on BTC; multi-asset remains future work.
-- :e-mail: **Email delivery:** SMTP configuration still being finalized.
----
-## :crystal_ball: Future Work
-- :chart_with_upwards_trend: Backtests: compare **DCA-only** vs **DCA + DipDetectorML** over 1–3 years (extra BTC stacked).
-- :earth_africa: Add ETH, XRP, and others; cross-asset signals.
-- :newspaper: Add news/sentiment features (Fed/CPI, ETF flows, exchange events).
-- :rocket: Model upgrades: XGBoost/LightGBM; sequence models (LSTM/GRU).
-- :calling: Slack bot or mobile push as alternatives to email.
-- :busts_in_silhouette: User preferences: per-user tiers, unsubscribe links, dashboards.
 ---
 
 ## :chart_with_upwards_trend: Dip Detector ML Demo (Screenshots and Video)
+
+<img width="997" height="371" alt="image (5)" src="https://github.com/user-attachments/assets/18474602-d27e-4c55-87a8-4f9994333b69" />
+<br>
+
 <img width="1366" height="890" alt="image (1)" src="https://github.com/user-attachments/assets/70c8a790-e919-4d6f-84a0-f4a95e787c55" />  <br>
 
 <img width="1250" height="892" alt="image (2)" src="https://github.com/user-attachments/assets/a6b2c7bf-9483-48e8-a83a-aa40978388c2" />  <br>
