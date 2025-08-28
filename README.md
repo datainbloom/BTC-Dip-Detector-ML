@@ -12,7 +12,7 @@ Welcome to the BTC Dip Detector project! This machine learning repository is bui
 ---
 **DipDetectorML** is a hybrid **system** that combines:
 1) :zap: **Rule-based live alerts** – monitors Bitcoin (BTC) in real time and emails users when dips of **2%, 5%, 10%, 15%, or 20%** occur.
-2) :robot_face: **Machine learning forecasting** – trains a **Random Forest model** on historical BTC data to predict the probability of a **≥20% monthly dip** and sends a monthly warning email if risk is high.
+2) :busts_in_silhouette: **Machine learning forecasting** – trains a **Random Forest model** on historical BTC data to predict the probability of a **≥20% monthly dip** and sends a monthly warning email if risk is high.
 It’s designed for **long-term Bitcoin accumulators** who never sell—only buy “as mucho and as often as possible.” By layering real-time alerts with predictive foresight, DipDetectorML helps users **supercharge their Dollar Cost Averaging (DCA) strategy**, stacking more BTC at better prices.
 ---
 ## :dart: Motivation
@@ -64,7 +64,7 @@ DipDetectorML is a **smarter accumulation assistant** for long-term holders:
 - :crystal_ball: **Predictive foresight:** the monthly crash forecast helps you **stage cash** ahead of major downturns rather than reacting late.
 ---
 ## :warning: Limitations
-- :scales: **Class imbalance:** true ≥20% dips are rare; requires careful thresholding and metrics.
+- :speech_balloon: **Class imbalance:** true ≥20% dips are rare; requires careful thresholding and metrics.
 - :hourglass_flowing_sand: **Non-stationarity:** crypto regimes change; models can drift.
 - :lock: **API rate limits:** CoinGecko free tier is 100k requests/month → poll responsibly.
 - :dart: **Scope:** MVP focuses on BTC; multi-asset remains future work.
@@ -74,7 +74,7 @@ DipDetectorML is a **smarter accumulation assistant** for long-term holders:
 ### :busts_in_silhouette: Team Contributions
 - **Jessenia (Lead):** :star2: Slack + GitHub setup, README, standups, documentation, demo coordination, final submission.
 - **Kachi:** :zap: Built live API polling + dip logic, CSV logging; actively integrating SMTP for email delivery.
-- **Mohammed:** :robot_face: Implemented **RandomForestClassifier**, engineered features, ran **Grid/RandomizedSearchCV**, produced **AUC/precision/recall**, **confusion matrix**, and saved the model with `joblib`.
+- **Mohammed:** :bust_in_silhouette: Implemented **RandomForestClassifier**, engineered features, ran **Grid/RandomizedSearchCV**, produced **AUC/precision/recall**, **confusion matrix**, and saved the model with `joblib`.
 - **Rosania:** :memo: Drafted documentation and background research.
 - **Belkis:** :email: Worked on email integration.
 ### :raised_hands: Special Acknowledgments
@@ -87,7 +87,6 @@ Special thanks also to **CoinGecko** :lizard: for providing free API access that
 MIT License.
 CoinGecko API data subject to their terms of service: https://www.coingecko.com/en/terms
 ---
-## :female-technologist::skin-tone-4: Contributing
 We welcome input and insights! Please fork, clone, and submit PRs.
 ## :white_check_mark: Results & Evaluation (MVP Checkpoint)
 ### Working Prototype
@@ -126,13 +125,13 @@ DipDetectorML is a **smarter accumulation assistant** for long-term holders:
 ---
 
 ## :chart_with_upwards_trend: Dip Detector ML Demo (Screenshots and Video)
-<img width="1366" height="890" alt="image (1)" src="https://github.com/user-attachments/assets/62704da6-8b0d-44ed-8336-ad599da9f609" />  <br>
+<img width="1366" height="890" alt="image (1)" src="https://github.com/user-attachments/assets/70c8a790-e919-4d6f-84a0-f4a95e787c55" />  <br>
 
-<img width="1250" height="892" alt="image (2)" src="https://github.com/user-attachments/assets/051cd1ea-2418-4975-8627-08a8e5011689" />  <br>
+<img width="1250" height="892" alt="image (2)" src="https://github.com/user-attachments/assets/a6b2c7bf-9483-48e8-a83a-aa40978388c2" />  <br>
 
-<img width="1251" height="889" alt="image (3)" src="https://github.com/user-attachments/assets/03f854e2-bf3d-44f9-b01f-8d3a659d511b" />  <br>
+<img width="1251" height="889" alt="image (3)" src="https://github.com/user-attachments/assets/dfd612b2-a99b-4c32-a11a-3437ddfe35ec" />  <br>
 
-<img width="1092" height="900" alt="image (4)" src="https://github.com/user-attachments/assets/da1d3022-6f66-4905-ac7a-1c5e9b17dd9e" />  <br>
+<img width="1092" height="900" alt="image (4)" src="https://github.com/user-attachments/assets/65715876-f3a5-4fa2-af96-9ae8045b23b2" />  <br>
 
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/8eToJtgs0P0/0.jpg)](http://www.youtube.com/watch?v=8eToJtgs0P0 "Dip Detector ML Demo")
 
