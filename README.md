@@ -98,31 +98,33 @@ pip install -r requirements.txt
 ## 🗂️ Code Structure
 
 ```
-DipDetectorML/
+BTC-DipDetector-ML/
 │
-├── notebooks/
-│   ├── jessenia_integration.ipynb
-│   ├── mohammed_ml.ipynb
-│   ├── kachi_api.ipynb
-│   └── belkis_email.ipynb
+├── Data/
+│   └── bitcoin_cleaned_with_features.csv
 │
-├── data/
-│   ├── price_log.csv
-│   └── ml_monthly_prob.json
+├── files/
+│   ├── dip_detector_model.pkl
+│   ├── feature_list.pkl
+│   └── monthly_forecast.py
 │
-├── models/
-│   └── rf_monthly.pkl
+├── Images/
+│   └── DipDetectorML_Architectural_Flowchart.png
 │
-├── reports/
-│   └── metrics.txt
+├── Notebooks/
+│   ├── Belkis.ipynb
+│   ├── Jessenia.ipynb
+│   ├── ML_Random_Forest_Mohammed.ipynb
+│   ├── Onyekachi.ipynb
+│   └── Rosania.ipynb
 │
-├── app.py
-├── fetch_live.py
-├── live_alerts.py
-├── train_monthly_random_forest.py
-├── monthly_forecast.py
+├── DipDetectorML_FlowChart.md
+├── DipDetectorMLapp.py
+├── core.py
 ├── requirements.txt
-└── README.md
+├── README.md
+└── .env
+
 ```
 
 ---
@@ -290,9 +292,9 @@ Allow flexible thresholds for rule-based alerts to balance alert frequency.
 - **Belkis:** ✉️ Email intergration collaboration.
 
 ### 🙌 Special Acknowledgments
-- **Maurice** (Mentor) 💡 — for guidance, review, and support throughout the project.  
-- **Farukh** (Instructor) 🎓 — for technical instruction and ML insights.  
-- **Gaurav** (Instructor) 🎓 — for teaching, feedback, and continued support.  
+- **Maurice** (Mentor) 💡 — for constructive guidance, review, and unwavering support throughout the project.  
+- **Farukh** (Instructor) 🎓 — for technical instruction, ML insight and insightful feedback.  
+- **Gaurav** (Instructor) 🎓 — for teaching, feedback, and continued assistance.  
 
 Special thanks also to **CoinGecko** 🦎 for providing free API access that made the live alert system possible.  
 
