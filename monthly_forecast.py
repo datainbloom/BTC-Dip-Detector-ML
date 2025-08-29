@@ -8,8 +8,8 @@ def get_dip_risk():
     """
 
     # Load model + features
-    pipe = joblib.load("dip_detector_model.pkl")
-    FEATURES = joblib.load("feature_list.pkl")
+    pipe = joblib.load("files/dip_detector_model.pkl")
+    FEATURES = joblib.load("files/feature_list.pkl")
 
     # Load cleaned dataset
     df = pd.read_csv("Data/bitcoin_cleaned_with_features.csv")
@@ -24,8 +24,8 @@ def get_dip_risk():
     proba = pipe.predict_proba(latest_features)[0]
 
     # proba[1] = probability of dip
-    return f"Risk of a dip in the next 30 days is: {proba[1]*100:.2f}%"
+    return f"Risk of a 20% dip in the next 30 days is: {proba[1]*100:.2f}%"
 
 
 
-print(get_dip_risk())
+# print(get_dip_risk())
