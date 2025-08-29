@@ -84,7 +84,7 @@ with tab_ml:
         m = re.search(r'(\d+(?:\.\d+)?)\s*%', str(msg))
         risk_pct = float(m.group(1)) if m else None
 
-        # Optional: display as a metric + risk band
+        # display as a metric + risk band
         if risk_pct is not None:
             col1, col2, col3 = st.columns(3)
             with col1:
