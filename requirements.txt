@@ -1,0 +1,14 @@
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+joblib
+requests
+python-dotenv
+APScheduler
+plotly
+sqlalchemy
+psycopg2-binary
+yfinance
+pytz
