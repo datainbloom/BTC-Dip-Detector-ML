@@ -247,6 +247,13 @@ Educationally, demonstrates both classical ML (Random Forest, Logistic Regressio
 - 🔮 **Predictive foresight:** the monthly crash forecast helps you **stage cash** ahead of major downturns rather than reacting late.  
 
 ---
+## :bar_chart: BTC Dip Alerts - Live & ML Dashboard
+
+- http://localhost:8502/
+![image-5.png](attachment:image-5.png)
+![image-6.png](attachment:image-6.png)
+
+[![Watch the video](https://img.youtube.com/vi/8eToJtgs0P0/maxresdefault.jpg)](https://youtu.be/8eToJtgs0P0)
 
 ## ⚠️ Limitations
 
